@@ -117,5 +117,9 @@
 ---
 
 ### Navigation
-<!-- Update week numbers below when creating a new week -->
+<!-- When creating a new week:
+     1. Replace 'XX' with actual week numbers (e.g., week-01, week-02)
+     2. Update the year in the path if needed
+     3. If this is the latest week, the "Next Week" link can remain incomplete
+-->
 [← Previous Week](../week-XX/README.md) | [Main README](../../../README.md) | [Next Week →](../week-XX/README.md)
