@@ -15,7 +15,7 @@
 - Dollar-cost investing: buy VTI 2 times a week (Daily is too often; and Monthly is too sparse)
 
 ## ✈️ Travel & Culture
-- Started documenting places I want to visit and why
+- IDEA/TODO: start a repo to document all places I have visited (trips taken, favorite local spots), and tips and lessons learned.
 - Started reading [Microadventures](https://alastairhumphreys.com/product/microadventures/) by Alastair Humphreys
 
 ## 🌱 Personal Development
