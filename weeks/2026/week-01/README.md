@@ -8,6 +8,7 @@
 - Set up GitHub repo for tracking weekly learnings
 - 📝 [Automating Life Admin: AI for Language Barriers & Scheduling](ai-life-admin-automation.md)
 - 🧠 Built [Remnote Flashcard Generator](https://github.com/ngnnah/gen-text-flashcard-remnote) — AI agent skill that converts URLs, YouTube videos, and notes into importable Remnote flashcards using their native syntax
+- 📝 Started DE-zoomcamp-2026 [Data Engineering Zoomcamp: Module 1 - Docker & SQL](https://github.com/ngnnah/data-enginnering-zoomcamp-2026/blob/main/LIP-2026-01-15-Module1-docker-sql.md)
 
 ## 💰 Finance & Money
 - Thinking about personal growth as compound interest
