@@ -5,7 +5,8 @@
 ---
 
 ## 💻 AI, Data & Programming
-- 
+- [Bullet points for quick learnings]
+- 📝 [Detailed Post Title](filename.md) ← link to subpages like this
 
 ## 💰 Finance & Money
 - 
@@ -29,8 +30,6 @@
 **Key Wins**: 
 
 **Challenges**: 
-
-**Next Week**: 
 
 ---
 
