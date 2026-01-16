@@ -22,6 +22,7 @@
 - The power of public accountability in achieving goals
 - Building sustainable learning habits
 - Building AI-agent powered systems to learn better: document and share, generate Remnote flashcards
+- 📝 [How to Switch Off From Work](switching-off-from-work.md) — the recovery paradox, end-of-day rituals, and DRAMMA model
 
 ## 💪 Health & Fitness
 - Treat learning as a mental health habit
