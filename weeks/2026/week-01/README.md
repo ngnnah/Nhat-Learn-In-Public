@@ -12,7 +12,7 @@
 
 ## 💰 Finance & Money
 - Thinking about personal growth as compound interest
-- Dollar-cost investing: buy VTI 2 times a week (Daily is too often; and Monthly is too sparse)
+- Dollar-cost investing: buy VTI 2 times a week ("Daily" is too often; and "Monthly" is too random)
 
 ## ✈️ Travel & Culture
 - IDEA/TODO: start a repo to document all places I have visited (trips taken, favorite local spots), and tips and lessons learned.
