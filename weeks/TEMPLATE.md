@@ -117,4 +117,5 @@
 ---
 
 ### Navigation
+<!-- Update week numbers below when creating a new week -->
 [← Previous Week](../week-XX/README.md) | [Main README](../../../README.md) | [Next Week →](../week-XX/README.md)

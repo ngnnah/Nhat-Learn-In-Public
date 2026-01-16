@@ -117,4 +117,4 @@
 ---
 
 ### Navigation
-[← Previous Week](../week-01/README.md) | [Main README](../../../README.md) | Next Week →
+[← Previous Week](../week-01/README.md) | [Main README](../../../README.md) | [Next Week →](../week-03/README.md)
