@@ -15,6 +15,7 @@
 - Created the structure for this learning journal
 - Experimented with markdown badges and visual elements
 - Set up weekly templates for consistent documentation
+- [Automating Life Admin: AI for Language Barriers & Scheduling](ai-life-admin-automation.md)
 
 ### Resources
 - [GitHub Markdown Guide](https://guides.github.com/features/mastering-markdown/)
