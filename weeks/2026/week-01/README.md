@@ -16,7 +16,7 @@
 
 ## ✈️ Travel & Culture
 - Started documenting places I want to visit and why
-- Started reading Microadventures (Book by Alastair Humphreys)
+- Started reading [Microadventures](https://alastairhumphreys.com/product/microadventures/) by Alastair Humphreys
 
 ## 🌱 Personal Development
 - The power of public accountability in achieving goals
