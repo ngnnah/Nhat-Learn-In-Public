@@ -7,6 +7,7 @@
 ## 💻 AI, Data & Programming
 - Set up GitHub repo for tracking weekly learnings
 - 📝 [Automating Life Admin: AI for Language Barriers & Scheduling](ai-life-admin-automation.md)
+- 🧠 Built [Remnote Flashcard Generator](https://github.com/ngnnah/gen-text-flashcard-remnote) — AI agent skill that converts URLs, YouTube videos, and notes into importable Remnote flashcards using their native syntax
 
 ## 💰 Finance & Money
 - Thinking about personal growth as compound interest
