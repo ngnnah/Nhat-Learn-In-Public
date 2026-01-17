@@ -17,9 +17,7 @@ Found this gem near my home in Osaka: [Cascade Kobe Bakery](https://www.cascade-
 - Wholesome ingredients, guilt-free eating
 - Combines traditional Japanese bread-making with health-conscious baking
 
-## Must-Try Items
-
-- Everything!
+## Must-Try Items: Everything!
 
 ---
 
