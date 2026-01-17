@@ -15,7 +15,8 @@
 - Dollar-cost investing: buy VTI 2 times a week ("Daily" is too often; and "Monthly" is too random)
 
 ## ✈️ Travel & Culture
-- IDEA/TODO: start a repo to document all places I have visited (trips taken, favorite local spots), and tips and lessons learned.
+- Start to document all places I have visited (trips taken, favorite local spots), and tips and lessons learned
+- 🍞 [Cascade Bakery](cascade-bakery.md) — New favorite local spot near home in Osaka. Best bread I've ever had (Hokkaido wheat, Shuzake yeast, wholesome grains) 
 - Started reading [Microadventures](https://alastairhumphreys.com/product/microadventures/) by Alastair Humphreys
 
 ## 🌱 Personal Development
