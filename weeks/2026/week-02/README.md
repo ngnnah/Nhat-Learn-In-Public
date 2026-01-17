@@ -6,6 +6,7 @@
 
 ## ✈️ Travel & Culture
 - 📝 [Sheriff vs Police in the US (ELI5)](sheriff-vs-police.md)
+- 📝 [US Marshals: Key Facts](us-marshals.md) — inspired by Shutter Island
 
 ---
 
