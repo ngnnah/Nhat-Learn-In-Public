@@ -37,21 +37,6 @@ Each week covers up to 6 life domains:
 
 ---
 
-## 📖 Adding New Weeks
-
-```bash
-# Create new week
-./scripts/new-week.sh
-
-# Or manually:
-mkdir -p weeks/2026/week-03
-cp weeks/TEMPLATE.md weeks/2026/week-03/README.md
-```
-
-Then update the table above.
-
----
-
 <div align="center">
 
 *Keep learning, keep growing, keep sharing.* 🚀
