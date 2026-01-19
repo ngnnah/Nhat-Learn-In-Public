@@ -1,6 +1,6 @@
 # The Game of Go & Its Legends
 
-*After watching "The Match" on Netflix (about Lee Sedol vs AlphaGo)*
+*After watching "The Match" (승부) on Netflix — about Cho Hunhyun and his protégé Lee Changho*
 
 ---
 
@@ -105,8 +105,8 @@ He now designs board games and teaches game design — focusing on what AI canno
 
 ## 🎬 Recommended Watching
 
-- **"The Match"** (Netflix) — Lee Sedol vs AlphaGo documentary
-- **"AlphaGo"** (2017 doc) — Full story of DeepMind's journey
+- **"The Match"** (승부, 2025) — Cho Hunhyun & Lee Changho biographical drama (Netflix)
+- **"AlphaGo"** (2017 doc) — Lee Sedol vs AlphaGo; DeepMind's journey
 
 ---
 
