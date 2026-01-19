@@ -1,12 +1,14 @@
-# Week 02, 2026 (Jan 19 - Jan 25)
+# Week 02 (Jan 19 - Jan 25, 2026)
 
-> **Week at a Glance**: TBD
+## 💻 AI, Data & Programming
 
----
+- 📝 [The Game of Go & Greatest Players](go-game-and-legends.md) — Quick primer on Go after watching "The Match" on Netflix
 
 ## ✈️ Travel & Culture
-- 📝 [Sheriff vs Police in the US (ELI5)](sheriff-vs-police.md)
-- 📝 [US Marshals: Key Facts](us-marshals.md) — inspired by Shutter Island
+
+- 📝 [Sheriff vs Police in the US](sheriff-vs-police.md) — How US law enforcement jurisdictions work
+- 📝 [US Marshals: Key Facts](us-marshals.md) — The oldest federal law enforcement agency; inspired by Shutter Island
+
 
 ---
 

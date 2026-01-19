@@ -46,3 +46,4 @@ Nhat-Learn-In-Public/
 - Only document topics where you actually learned something
 - Use bullet points, not verbose paragraphs
 - Skip empty sections in weekly files
+- **IMPORTANT**: When updating a week, READ existing content first — never overwrite existing posts or links
