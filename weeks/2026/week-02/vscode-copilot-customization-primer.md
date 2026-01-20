@@ -33,395 +33,170 @@ Two mechanisms that provide persistent context:
 - Edit once in `.github/`, both tools see changes
 - No duplication, no sync issues
 
-## Custom Instructions: What Always Applies
+## Custom Instructions: Always-On Rules
 
-Put these in global/project instructions files:
+What goes in `.github/copilot-instructions.md`:
 
-### 1. Security (Non-Negotiable)
-
+**Security** (non-negotiable):
 ```markdown
-## SECURITY RULES (NEVER VIOLATE)
 - NEVER commit .env files, API keys, or secrets
 - ALWAYS verify .gitignore before commits
 - ALWAYS use environment variables for credentials
 ```
 
-### 2. Identity
-
+**Your Identity** (so AI uses correct accounts):
 ```markdown
-## GitHub Account
-**ALWAYS** use **YourUsername** for all projects:
-- SSH: `git@github.com:YourUsername/<repo>.git`
-
-## Docker Hub
-Already authenticated. Username in `~/.env` as `DOCKER_HUB_USER`
+## GitHub: username/YourUsername
+## Docker Hub: username in ~/.env as DOCKER_HUB_USER
 ```
 
-#### 3. Project Scaffolding Standards
-: Use YourUsername for all repos
-## Docker: Username in ~/.env as DOCKER_HUB_USER
-```
-
-### 3. Project Scaffoldingeholders
-- `.gitignore` — Must include: .env, node_modules/, dist/
-- `README.md` — Project overview
-
-### Required Structure
-project/
-├── src/
-├── tests/
-├── docs/
-├── .github/skills/
-└── scripts/
-```
-
-#### 4. Language/Framework Conventions
-
+**Code Standards** (your team's conventions):
 ```markdown
-## Python: Type hints, PEP 8, Black formatter, max 100 chars
-## Error Handling: Specific exceptions, context in messages
+## Python: Type hints, PEP 8, Black formatter, 100 char max
+## TypeScript: Strict mode, explicit types, ESLint
+## Error Handling: Specific exceptions with context
 ```
 
-## Agent Skills: Task-Specific Expertise
+## Agent Skills: On-Demand Expertise
 
-### What Are Agent Skills?
+Skills are **folders** in `.github/skills/` containing:
+- `SKILL.md` with instructions
+- Optional scripts, templates, examples
 
-Agent Skills are **folders** containing:
-- A `SKILL.md` file with instructions
-- Optional scripts, templates, or resources
-- Everything needed for a specialized task
+**Key difference from instructions:**
 
-Unlike custom instructions that are always loaded, skills use **progressive disclosure**:
-1. **Discovery**: Copilot sees only the skill's name and description
-2. **Activation**: Full instructions load when the task matches
-3. **Resources**: Additional files load only when referenced
+| Aspect      | Instructions                     | Skills                          |
+| ----------- | -------------------------------- | ------------------------------- |
+| **Loading** | Always (every chat)              | On-demand (when task matches)   |
+| **Use For** | Standards used >80% of the time  | Specific tasks <20% of the time |
+| **Content** | Rules, conventions, patterns     | Procedures, scripts, checklists |
+| **Tokens**  | Always in context                | Only when activated             |
 
-### Agent Skills vs Custom Instructions
+## Setting Up Symlinks for Claude Compatibility
 
-|             | SKILLS                                         | INSTRUCTIONS                                     |
-| ----------- | ---------------------------------------------- | ------------------------------------------------ |
-| **Content** | Instructions + scripts + examples              | Instructions only                                |
-| **Loading** | On-demand                                      | Always                                           |
-| **Use For** | Testing, debugging, migrations (<20% of chats) | Standards, conventions, security (>80% of chats) |
-| **Tokens**  | Only when used                                 | Always in context                                |
-
-## Creating Skills
-
-### Standard Location Strategy
-
-**Use `.github/` as your single source of truth:**
-
-```
-.github/
-  ├── copilot-instructions.md    # Your always-on rules
-  └── skills/                     # Your on-demand skills
-      ├── checking-urls/
-      ├── pdf-reader/
-      └── skill-writer/
-```
-
-**Why `.github/`?**
-- ✅ VSCode Copilot native support
-- ✅ Agent Skills standard (agentskills.io)
-- ✅ Clear team convention (`.github/` already used for Actions)
-- ✅ Future-proof
-
-### Add Claude Compatibility
-
-Create symlinks so Claude Code sees the same content:
+To make Claude Code work with the same files as VSCode Copilot:
 
 ```bash
-# One-time setup
+# One-time setup in your project root
 mkdir -p .claude
 ln -sf ../.github/copilot-instructions.md .claude/CLAUDE.md
 ln -sf ../.github/skills .claude/skills
 ```
 
-Now both tools read from `.github/` ✅
+**What this does:**
+- Creates symbolic links (pointers) from `.claude/` to `.github/`
+- Edit files in `.github/`, both VSCode and Claude see changes
+- No file duplication, no sync issues
+- Both tools stay in sync automatically
 
-**Avoid these locations:**
-- ❌ `.agents/skills/` — Neither tool recognizes
-- ❌ `.claude/skills/` as primary — Creates divergence
-- ❌ Custom locations — Breaks standards
+## Creating a Skill
 
-### Anatomy of SKILL.md
+Basic structure:
 
+```
+.github/skills/testing/
+├── SKILL.md
+└── test-template.js
+```
+
+**SKILL.md format:**
 ```markdown
 ---
-name: webapp-testing
-description: E2E testing with Playwright for UI, user flows, integration scenarios
+name: testing
+description: E2E testing with Playwright
 ---
 
 # Web Testing
 
 ## When to Use
-Testing interfaces, workflows, responsive design, regression
+Testing UI, user flows, integration
 
 ## Procedure
 1. Use template: [test-template.js](./test-template.js)
 2. Run: `npm run test:e2e`
 3. Use data-testid selectors
-4. Keep tests independent
 
 ## Example
 ```js
 test('login flow', async ({ page }) => {
   await page.goto('/login');
   await page.fill('[data-testid="email"]', 'test@example.com');
-  await page.fill('[data-testid="password"]', 'pass');
   await expect(page).toHaveURL('/dashboard');
 });
 ```
 ```
 
-### Example 1: GitHub Actions Debugging Skill
-
-```
-.github/skills/gh-actions-debug/
-├── SKILL.md
-├── debug-checklist.md
-└── examples/
-    ├── failed-job.yml
-    └── fixed-job.yml
-```
-
-## Example Skills
-
-### GitHub Actions Debug
-```
-.github/skills/gh-actions-debug/
-├── SKILL.md
-└── examples/
-```
-
-Key checklist: Secrets accessible? Permissions set? Cache clear? Dependencies pinned?
-
-### Database Migration
-```
-.github/skills/db-migration/
-├── SKILL.md
-├── migration-template.sql
-└── rollback-template.sql
-```
-
-Always: timestamp naming, test locally, create rollback, backup prod, use transactions.
-
 ## Key Patterns
 
-### Compounding Engineering
-from pathlib import Path
-
-SENSITIVE = {'.env', '.env.local', 'secrets.json', 'id_rsa'}
-
-data = json.load(sys.stdin)
-file_path = data.get('tool_input', {}).get('file_path', '')
-
-if Path(file_path).name in SENSITIVE:
-    print(f"BLOCKED: Access to {file_path} denied.", file=sys.stderr)
-    sys.exit(2)  # Exit 2 = block and tell Claude why
-
-sys.exit(0)
+**Compounding Knowledge:**
 ```
-
-**Hook Exit Codes**:
-- `0`: Allow operation
-- `1`: Error (show to user)
-- `2`: Block operation, tell AI why
-
-## Language Server Protocol (LSP): Semantic Understanding
-
-As of December 2025, Claude Code gained native LSP support—a **game-changer** for AI coding.
-
-###Key Patterns
-
-### Compounding Engineering
-Anthropic updates their CLAUDE.md multiple times per week:
+Mistake → Fix → Add to instructions → Never happens again
 ```
-Mistake → Fix → Add to CLAUDE.md → Never happens again
-```
-Each fix compounds over time into institutional knowledge.
+Each fix compounds into institutional knowledge.
 
-### One Task, One Chat
-[Research shows 39% performance drop](https://arxiv.org/pdf/2505.06120) mixing topics. Use `/clear` liberally.
+**One Task, One Chat:**
+Research shows 39% performance drop when mixing topics. Start fresh chats for new tasks.
 
-### Hooks = Deterministic Enforcement
-Instructions are suggestions. Hooks always run. Exit codes: `0`=allow, `1`=error, `2`=block+explain.
-mkdir -p ~/.claude
-touch ~/.claude/CLAUDE.md
-```
-
-Add your security rules, identity, and project scaffolding standards.
-
-### Step 2: Create Project Custom Instructions
-
-In your project root:
-```bCP: External Tools
-
-MCP connects Claude to external services. **Use wisely**—consumes tokens.
-
-**Rule**: One-off use? CLI is better. Repeated use? MCP shines.
-
-**Top Servers**:
-- Context7: Live docs (`npx @upstash/context7-mcp@latest`)
-- GitHub: PRs/issues (`npx @modelcontextprotocol/server-github`)
-- PostgreSQL: Queries (`npx @modelcontextprotocol/server-postgres`)
-- Playwright: Testing (`npx @anthropic-ai/playwright-mcp`)
-
-[76k+ more servers](https://github.com/punkpeye/awesome-mcp-servers)
-### Pitfall 2: Overly Generic Instructions
-**Problem**: Instructions too vague to be helpful  
-**Solution**: Be specific. Instead of "write good code," say "use type hints, handle errors explicitly, follow PEP 8."
-
-### Pitfall 3: Too Many Always-On Instructions
-**Problem**: Token budget consumed by rarely-used rules  
-**Solution**: Move infrequent tasks to Agent Skills. Use <20% rule: if used in <20% of conversations, make it a skill.
-
-### Pitfall 4: Skills Without Clear Descriptions
-**Problem**: AI doesn't know when to load the skill  
-**Solution**: Write specific descriptions mentioning capabilities AND use cases: "Debug GitHub Actions workflows when CI/CD fails or needs optimization."
-
-### Pitfall 5: No Rollback/Examples
-**Problem**: Instructions unclear without context  
-**Solution**: Include examples in skills. For migrations, include rollback scripts.
-
-## Real-World Workflow Example
-
-**Scenario**: You're building a React app and need to add a feature with tests.
-
-1. **Start New Chat**: Fresh context  
-2. **AI Loads Global Instructions**: Your React conventions, TypeScript rules  
-3. **AI Loads Project Instructions**: Project architecture, component patterns  
-4. **You Ask**: "Add a user profile page with avatar upload"  
-5. **AI Detects**: No specific skill needed, uses instructions  
-6. **Implements**: Creates component following your patterns  
-7. **You Ask**: "Add tests for this component"  
-8. **AI Activates*
-
-## Quick Reference
-
-| WHAT                 | WHERE                                   | LOADS     |
-| -------------------- | --------------------------------------- | --------- |
-| Global instructions  | `~/Library/.../copilot-instructions.md` | Always    |
-| Project instructions | `.github/copilot-instructions.md`       | Always    |
-| Project skills       | `.github/skills/*/SKILL.md`             | On-demand |
-| Personal skills      | `~/.copilot/skills/*/SKILL.md`          | On-demand |
+**The <20% Rule:**
+If something applies to <20% of your chats, make it a skill. Otherwise, add it to instructions.
 
 ## Common Mistakes
 
-1. **Using `.agents/` location**: Neither tool recognizes it ❌
-2. **Context rot**: Long chats lose focus. Use `/clear`, start fresh chats
-3. **Vague instructions**: "Write good code" → "Use type hints, PEP 8, explicit errors"
-4. **Too many always-on rules**: <20% usage? Make it a skill
-5. **Unclear skill descriptions**: Mention both capability AND use case
-6. **No examples**: Always include working code samples
+1. **Using `.agents/` or custom locations** — Neither VSCode nor Claude recognizes them
+2. **Vague instructions** — "Write good code" → "Use type hints, PEP 8, explicit errors"
+3. **Too many always-on rules** — <20% usage? Make it a skill
+4. **Long chats** — Performance drops 39% when mixing topics. Start fresh chats
+5. **No examples** — Always include working code in skills
 
-## TL;DR
-
-- **Instructions**: Always-on standards (security, conventions)
-- **Skills**: On-demand workflows (testing, migrations)
-- **Locations**: Use `.github/` (VSCode) with `.claude/` symlinks (compatibility)
-- **NOT `.agents/`**: Neither tool recognizes this location ❌
-- **One task, one chat**: 39% perf hit when mixing topics
-- **<20% rule**: Infrequent? Make it a skill
-- **LSP**: 900x faster semantic navigation
-- **MCP**: One-off? CLI. Repeated? MCP
-
-## Tool Compatibility Matrix
-
-| Location             | VSCode Copilot   | Claude Code      | Recommended   |
-| -------------------- | ---------------- | ---------------- | ------------- |
-| `.github/skills/`    | ✅ Native         | ⚠️ Via symlink    | **Best**      |
-| `.claude/skills/`    | ⚠️ Legacy         | ✅ Native         | OK            |
-| `.agents/skills/`    | ❌ Not recognized | ❌ Not recognized | **Avoid**     |
-| `~/.copilot/skills/` | ✅ Personal       | ❌                | Personal only |
-| `~/.claude/skills/`  | ❌                | ✅ Personal       | Personal only |
-
-## Unified Setup: One Source, Two Pointers
-
-### The Symlink Pattern
+## Quick Start
 
 ```bash
-# 1. Create standard structure
+# 1. Create structure
 mkdir -p .github/skills
 touch .github/copilot-instructions.md
 
-# 2. Add your skills
-mv your-skill/ .github/skills/your-skill/
-
-# 3. Create Claude compatibility layer
+# 2. Add Claude compatibility
 mkdir -p .claude
 ln -sf ../.github/copilot-instructions.md .claude/CLAUDE.md
 ln -sf ../.github/skills .claude/skills
+
+# 3. Add your rules to .github/copilot-instructions.md
+# 4. Create skills in .github/skills/
 ```
 
-### Result
+## TL;DR
 
-```
-.github/               ← SINGLE SOURCE OF TRUTH
-  ├── copilot-instructions.md
-  └── skills/
-      ├── checking-urls/
-      └── pdf-reader/
+- **Use `.github/` as single source** — Add `.claude/` symlinks for compatibility
+- **Instructions = always-on** — Security, standards, conventions (>80% of chats)
+- **Skills = on-demand** — Testing, debugging, migrations (<20% of chats)
+- **Edit once, both tools see changes** — No duplication via symlinks
+- **One task per chat** — Fresh context prevents 39% performance drop
+- **Be specific** — "Use type hints" beats "write good code"
 
-.claude/               ← COMPATIBILITY LAYER
-  ├── CLAUDE.md       → points to .github/copilot-instructions.md
-  └── skills/         → points to .github/skills/
-```
+## Why Symlinks Matter
 
-**Benefits:**
-- ✅ Edit once in `.github/`, both tools see changes
-- ✅ No duplicate files
-- ✅ No sync issues
-- ✅ Standard compliant
-- ✅ Team-friendly (everyone understands `.github/`)
+**The Problem:**
+- VSCode Copilot reads from `.github/copilot-instructions.md`
+- Claude Code reads from `.claude/CLAUDE.md`
+- Without symlinks, you maintain two copies (sync nightmare)
 
-## Migration Guide
-
-### From .agents/ or .claude/ to Standard Location
-
+**The Solution:**
 ```bash
-# Step 1: Move to .github/ (standard location)
-mkdir -p .github
-mv .agents/skills .github/skills 2>/dev/null || mv .claude/skills .github/skills
-mv AGENTS.md .github/copilot-instructions.md 2>/dev/null || mv .claude/CLAUDE.md .github/copilot-instructions.md
-
-# Step 2: Create symlinks for Claude compatibility
-mkdir -p .claude
 ln -sf ../.github/copilot-instructions.md .claude/CLAUDE.md
-ln -sf ../.github/skills .claude/skills
-
-# Step 3: Verify setup
-ls -la .github/skills/    # Should show your skills
-ls -la .claude/           # Should show symlinks
-
-# Step 4: Test
-# Ask in VSCode/Claude: "What skills are available?"
-# Both should now list your skills ✅
-
-# Step 5: Cleanup (optional)
-rm -rf .agents
 ```
 
-**Why this works:**
-- `.github/` = your actual files
-- `.claude/` = pointers to `.github/`
-- Edit once, both tools see it
-- No duplication, no sync issues
+Now `.claude/CLAUDE.md` is just a **pointer** to `.github/copilot-instructions.md`. Edit one file, both tools see it.
 
-See [.agents/ANALYSIS.md](/.agents/ANALYSIS.md) for detailed comparison.
+**Symlink Benefits:**
+- ✅ Single source of truth in `.github/`
+- ✅ No duplicate files to keep in sync
+- ✅ Team-standard location (`.github/` already used for Actions)
+- ✅ Both VSCode and Claude work seamlessly
 
-## Resources
+## Learn More
 
-**Official**:
 - [VSCode Copilot Docs](https://code.visualstudio.com/docs/copilot/customization/overview)
 - [Agent Skills Spec](https://agentskills.io/)
-- [Claude Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
+- [Context Rot Research](https://research.trychroma.com/context-rot)
 
-**Examples**:
-- [github/awesome-copilot](https://github.com/github/awesome-copilot)
-- [anthropics/skills](https://github.com/anthropics/skills)
-- [TheDecipherist/claude-code-mastery](https://github.com/TheDecipherist/claude-code-mastery)
-
-**Research**:
-- [Context Rot](https://research.trychroma.com/context-rot)
-- [Multi-Turn Performance](https://arxiv.org/pdf/2505.06120
+[← Back to Week 02](README.md)
