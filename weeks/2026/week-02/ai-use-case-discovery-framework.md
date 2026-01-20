@@ -92,19 +92,19 @@ Organizations often jump into AI projects based on vague ambitions or "shiny" ca
 
 Use this worksheet for each use case:
 
-| Field | Question | Example (Internal) | Example (External) |
-|-------|----------|-------------------|-------------------|
-| **Problem Statement** | What is the pain/inefficiency or opportunity? | Processing expense reports is slow | Customers can't easily get product advice |
-| **Who is Impacted?** | Internal users (roles/depts) or customer segment | Finance team | End customers (mobile app users) |
-| **Persona/Segment** | Target employee type or customer persona | Accounts payable clerk | New shoppers, returning buyers |
-| **Sample Questions/Tasks** | Typical queries or actions | "Is this expense valid?" | "What's the best running shoe for me?" |
-| **Touchpoints/Channels** | Where does this occur? | Internal portal, email | Mobile app, website chatbot |
-| **Business/Experience Benefit** | Time saved, accuracy, satisfaction, revenue, NPS uplift | Faster cycle time, cost savings | Higher conversion, improved NPS |
-| **Volume/Frequency** | How often? How many users/transactions? | 200 reports/week | 10,000 queries/month |
-| **Current Process/Pain** | Description of current workflow, friction points, costs | Manual, error-prone | Manual search/filtering, low satisfaction |
-| **Potential Risks** | What could go wrong? (privacy, accuracy, compliance, brand) | Missed fraud, compliance errors | Wrong or biased recommendations |
-| **Strategic Priority** | How important is this to company goals? | Medium | High |
-| **Feasibility** | Is needed data/process access available? | Data is available | Need access to support/product content |
+| Field                           | Question                                                    | Example (Internal)                 | Example (External)                        |
+| ------------------------------- | ----------------------------------------------------------- | ---------------------------------- | ----------------------------------------- |
+| **Problem Statement**           | What is the pain/inefficiency or opportunity?               | Processing expense reports is slow | Customers can't easily get product advice |
+| **Who is Impacted?**            | Internal users (roles/depts) or customer segment            | Finance team                       | End customers (mobile app users)          |
+| **Persona/Segment**             | Target employee type or customer persona                    | Accounts payable clerk             | New shoppers, returning buyers            |
+| **Sample Questions/Tasks**      | Typical queries or actions                                  | "Is this expense valid?"           | "What's the best running shoe for me?"    |
+| **Touchpoints/Channels**        | Where does this occur?                                      | Internal portal, email             | Mobile app, website chatbot               |
+| **Business/Experience Benefit** | Time saved, accuracy, satisfaction, revenue, NPS uplift     | Faster cycle time, cost savings    | Higher conversion, improved NPS           |
+| **Volume/Frequency**            | How often? How many users/transactions?                     | 200 reports/week                   | 10,000 queries/month                      |
+| **Current Process/Pain**        | Description of current workflow, friction points, costs     | Manual, error-prone                | Manual search/filtering, low satisfaction |
+| **Potential Risks**             | What could go wrong? (privacy, accuracy, compliance, brand) | Missed fraud, compliance errors    | Wrong or biased recommendations           |
+| **Strategic Priority**          | How important is this to company goals?                     | Medium                             | High                                      |
+| **Feasibility**                 | Is needed data/process access available?                    | Data is available                  | Need access to support/product content    |
 
 > ⚠️ **Watch out**: Don't skip the worksheet—it forces you to think through details you'll need later
 
