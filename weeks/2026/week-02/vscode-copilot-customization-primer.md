@@ -262,12 +262,12 @@ MCP connects Claude to external services. **Use wisely**—consumes tokens.
 
 ## Quick Reference
 
-| WHAT | WHERE | LOADS |
-|------|-------|-------|
-| Global instructions | `~/Library/.../copilot-instructions.md` | Always |
-| Project instructions | `.github/copilot-instructions.md` | Always |
-| Project skills | `.github/skills/*/SKILL.md` | On-demand |
-| Personal skills | `~/.copilot/skills/*/SKILL.md` | On-demand |
+| WHAT                 | WHERE                                   | LOADS     |
+| -------------------- | --------------------------------------- | --------- |
+| Global instructions  | `~/Library/.../copilot-instructions.md` | Always    |
+| Project instructions | `.github/copilot-instructions.md`       | Always    |
+| Project skills       | `.github/skills/*/SKILL.md`             | On-demand |
+| Personal skills      | `~/.copilot/skills/*/SKILL.md`          | On-demand |
 
 ## Common Mistakes
 
@@ -291,13 +291,13 @@ MCP connects Claude to external services. **Use wisely**—consumes tokens.
 
 ## Tool Compatibility Matrix
 
-| Location | VSCode Copilot | Claude Code | Recommended |
-|----------|----------------|-------------|-------------|
-| `.github/skills/` | ✅ Native | ⚠️ Via symlink | **Best** |
-| `.claude/skills/` | ⚠️ Legacy | ✅ Native | OK |
-| `.agents/skills/` | ❌ Not recognized | ❌ Not recognized | **Avoid** |
-| `~/.copilot/skills/` | ✅ Personal | ❌ | Personal only |
-| `~/.claude/skills/` | ❌ | ✅ Personal | Personal only |
+| Location             | VSCode Copilot   | Claude Code      | Recommended   |
+| -------------------- | ---------------- | ---------------- | ------------- |
+| `.github/skills/`    | ✅ Native         | ⚠️ Via symlink    | **Best**      |
+| `.claude/skills/`    | ⚠️ Legacy         | ✅ Native         | OK            |
+| `.agents/skills/`    | ❌ Not recognized | ❌ Not recognized | **Avoid**     |
+| `~/.copilot/skills/` | ✅ Personal       | ❌                | Personal only |
+| `~/.claude/skills/`  | ❌                | ✅ Personal       | Personal only |
 
 ## Unified Setup for Both Tools
 
