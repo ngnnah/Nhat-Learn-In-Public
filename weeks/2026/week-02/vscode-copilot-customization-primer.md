@@ -124,7 +124,6 @@ test('login flow', async ({ page }) => {
   await expect(page).toHaveURL('/dashboard');
 });
 ```
-```
 
 ## Key Patterns
 
