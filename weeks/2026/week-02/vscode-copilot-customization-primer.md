@@ -65,12 +65,12 @@ Skills are **folders** in `.github/skills/` containing:
 
 **Key difference from instructions:**
 
-| Aspect      | Instructions                     | Skills                          |
-| ----------- | -------------------------------- | ------------------------------- |
-| **Loading** | Always (every chat)              | On-demand (when task matches)   |
-| **Use For** | Standards used >80% of the time  | Specific tasks <20% of the time |
-| **Content** | Rules, conventions, patterns     | Procedures, scripts, checklists |
-| **Tokens**  | Always in context                | Only when activated             |
+| Aspect      | Instructions                    | Skills                          |
+| ----------- | ------------------------------- | ------------------------------- |
+| **Loading** | Always (every chat)             | On-demand (when task matches)   |
+| **Use For** | Standards used >80% of the time | Specific tasks <20% of the time |
+| **Content** | Rules, conventions, patterns    | Procedures, scripts, checklists |
+| **Tokens**  | Always in context               | Only when activated             |
 
 ## Setting Up Symlinks for Claude Compatibility
 
