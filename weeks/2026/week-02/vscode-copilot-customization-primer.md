@@ -1,24 +1,37 @@
-# VSCode Copilot Customization: AGENTS.md & Agent Skills
+# VSCode Copilot Customization Primer
 
 Stop repeating yourself to AI. Configure once, inherit everywhere.
 
-## The Core Problem
+## The Problem
 
-AI assistants forget your conventions, security rules, and workflows between chats. You repeat the same instructions constantly.
+You keep telling AI the same things: "Use TypeScript," "Never commit secrets," "Follow our testing patterns." Every. Single. Chat.
 
-**Solution**: Two mechanisms that provide persistent context:
-- **Custom Instructions** (AGENTS.md) — Always-on standards and conventions
-- **Agent Skills** (SKILL.md) — On-demand expertise for specific tasks
+## The Solution
 
-## Configuration Hierarchy
+Two mechanisms that provide persistent context:
 
-| LEVEL   | LOCATION                                                                                   | APPLIES TO        |
-| ------- | ------------------------------------------------------------------------------------------ | ----------------- |
-| Global  | `~/.claude/CLAUDE.md` or `~/Library/Application Support/Code/User/copilot-instructions.md` | All your projects |
-| Project | `.github/copilot-instructions.md` ✅ **Standard location**                                  | This project      |
-| Skills  | `.github/skills/*/SKILL.md` ✅ **Standard location**                                        | Specific tasks    |
+1. **Custom Instructions** — Always-on rules (security, conventions, standards)
+2. **Agent Skills** — On-demand expertise for specific tasks (testing, migrations, debugging)
 
-**Key principle**: Use `.github/` as the single source of truth, add symlinks for tool compatibility.
+## Where Files Live
+
+```
+.github/                           ← SINGLE SOURCE OF TRUTH
+  ├── copilot-instructions.md      # Your always-on rules
+  └── skills/                      # Your on-demand skills
+      ├── testing/
+      └── debugging/
+
+.claude/                           ← COMPATIBILITY LAYER (symlinks)
+  ├── CLAUDE.md        → points to .github/copilot-instructions.md
+  └── skills/          → points to .github/skills/
+```
+
+**Why this structure?**
+- `.github/` = VSCode native, team-standard location
+- `.claude/` = Symlinks for Claude Code compatibility
+- Edit once in `.github/`, both tools see changes
+- No duplication, no sync issues
 
 ## Custom Instructions: What Always Applies
 
