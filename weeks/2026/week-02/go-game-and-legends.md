@@ -19,6 +19,24 @@
 
 ---
 
+## 🥋 The Dan Ranking System
+
+Created by **Honinbo Dosaku** in 17th-century Japan (he's in the GOAT list below).
+
+| Rank Type | Range | Level |
+|-----------|-------|-------|
+| **Kyu** (級) | 30k → 1k | Student ranks (count down) |
+| **Amateur Dan** (段) | 1d → 7d | Master ranks (count up) |
+| **Professional Dan** | 1p → 9p | Elite — requires passing qualification exam |
+
+**Key points:**
+- 1 dan = "black belt" equivalent — you've mastered the fundamentals
+- 1 rank difference ≈ 1 handicap stone in even games
+- Pro ranks are separate: a 1p is ~7d amateur strength, but 1p→9p span is only 2-3 stones
+- Top players today use Elo ratings (e.g., Shin Jinseo at 3856) for precise comparison
+
+---
+
 ## 🏆 Greatest Go Players of All Time
 
 ### Top 5 (Consensus)
