@@ -15,10 +15,10 @@ AI assistants forget your conventions, security rules, and workflows between cha
 | LEVEL   | LOCATION                                                                                   | APPLIES TO        |
 | ------- | ------------------------------------------------------------------------------------------ | ----------------- |
 | Global  | `~/.claude/CLAUDE.md` or `~/Library/Application Support/Code/User/copilot-instructions.md` | All your projects |
-| Project | `.github/copilot-instructions.md`                                                          | This project      |
-| Skills  | `.github/skills/*/SKILL.md`                                                                | Specific tasks    |
+| Project | `.github/copilot-instructions.md` ✅ **Standard location**                                  | This project      |
+| Skills  | `.github/skills/*/SKILL.md` ✅ **Standard location**                                        | Specific tasks    |
 
-Higher levels inherit to lower levels.
+**Key principle**: Use `.github/` as the single source of truth, add symlinks for tool compatibility.
 
 ## Custom Instructions: What Always Applies
 
@@ -94,18 +94,42 @@ Unlike custom instructions that are always loaded, skills use **progressive disc
 
 ## Creating Skills
 
-**Standard Locations** (both tools recognize):
-- **VSCode Primary**: `.github/skills/` ✅ (recommended)
-- **Claude Primary**: `.claude/skills/` ✅ (legacy but works)
-- **Personal**: `~/.copilot/skills/` or `~/.claude/skills/`
-- **NOT Standard**: `.agents/skills/` ❌ (neither tool recognizes)
+### Standard Location Strategy
 
-**Best Practice for Both Tools**:
-```bash
-# Use .github/ with symlinks for compatibility
-.github/skills/          # Primary location
-.claude/skills -> ../.github/skills  # Symlink for Claude
+**Use `.github/` as your single source of truth:**
+
 ```
+.github/
+  ├── copilot-instructions.md    # Your always-on rules
+  └── skills/                     # Your on-demand skills
+      ├── checking-urls/
+      ├── pdf-reader/
+      └── skill-writer/
+```
+
+**Why `.github/`?**
+- ✅ VSCode Copilot native support
+- ✅ Agent Skills standard (agentskills.io)
+- ✅ Clear team convention (`.github/` already used for Actions)
+- ✅ Future-proof
+
+### Add Claude Compatibility
+
+Create symlinks so Claude Code sees the same content:
+
+```bash
+# One-time setup
+mkdir -p .claude
+ln -sf ../.github/copilot-instructions.md .claude/CLAUDE.md
+ln -sf ../.github/skills .claude/skills
+```
+
+Now both tools read from `.github/` ✅
+
+**Avoid these locations:**
+- ❌ `.agents/skills/` — Neither tool recognizes
+- ❌ `.claude/skills/` as primary — Creates divergence
+- ❌ Custom locations — Breaks standards
 
 ### Anatomy of SKILL.md
 
@@ -299,48 +323,79 @@ MCP connects Claude to external services. **Use wisely**—consumes tokens.
 | `~/.copilot/skills/` | ✅ Personal       | ❌                | Personal only |
 | `~/.claude/skills/`  | ❌                | ✅ Personal       | Personal only |
 
-## Unified Setup for Both Tools
+## Unified Setup: One Source, Two Pointers
+
+### The Symlink Pattern
 
 ```bash
-# Standard structure that works with BOTH
-.github/
-  ├── copilot-instructions.md    # Project instructions
-  └── skills/                     # Skills folder
-      ├── testing/
-      └── debugging/
+# 1. Create standard structure
+mkdir -p .github/skills
+touch .github/copilot-instructions.md
 
-# Add Claude compatibility (optional but recommended)
-.claude/
-  ├── CLAUDE.md -> ../.github/copilot-instructions.md  # Symlink
-  └── skills -> ../.github/skills                      # Symlink
+# 2. Add your skills
+mv your-skill/ .github/skills/your-skill/
+
+# 3. Create Claude compatibility layer
+mkdir -p .claude
+ln -sf ../.github/copilot-instructions.md .claude/CLAUDE.md
+ln -sf ../.github/skills .claude/skills
 ```
 
-This way:
-- VSCode Copilot reads `.github/` natively ✅
-- Claude Code reads `.claude/` which points to `.github/` ✅  
-- Both tools see the same content ✅
-- Standard compliant ✅
+### Result
 
-## Fix Your .agents/ Setup
+```
+.github/               ← SINGLE SOURCE OF TRUTH
+  ├── copilot-instructions.md
+  └── skills/
+      ├── checking-urls/
+      └── pdf-reader/
 
-If you're currently using `.agents/`, migrate to standard locations:
+.claude/               ← COMPATIBILITY LAYER
+  ├── CLAUDE.md       → points to .github/copilot-instructions.md
+  └── skills/         → points to .github/skills/
+```
+
+**Benefits:**
+- ✅ Edit once in `.github/`, both tools see changes
+- ✅ No duplicate files
+- ✅ No sync issues
+- ✅ Standard compliant
+- ✅ Team-friendly (everyone understands `.github/`)
+
+## Migration Guide
+
+### From .agents/ or .claude/ to Standard Location
 
 ```bash
-# Option 1: Move to .github/ (recommended)
+# Step 1: Move to .github/ (standard location)
 mkdir -p .github
-mv .agents/skills .github/skills
-mv AGENTS.md .github/copilot-instructions.md
+mv .agents/skills .github/skills 2>/dev/null || mv .claude/skills .github/skills
+mv AGENTS.md .github/copilot-instructions.md 2>/dev/null || mv .claude/CLAUDE.md .github/copilot-instructions.md
 
-# Add Claude compatibility
+# Step 2: Create symlinks for Claude compatibility
 mkdir -p .claude
-ln -s ../.github/copilot-instructions.md .claude/CLAUDE.md
-ln -s ../.github/skills .claude/skills
+ln -sf ../.github/copilot-instructions.md .claude/CLAUDE.md
+ln -sf ../.github/skills .claude/skills
 
-# Cleanup
+# Step 3: Verify setup
+ls -la .github/skills/    # Should show your skills
+ls -la .claude/           # Should show symlinks
+
+# Step 4: Test
+# Ask in VSCode/Claude: "What skills are available?"
+# Both should now list your skills ✅
+
+# Step 5: Cleanup (optional)
 rm -rf .agents
 ```
 
-See [.agents/ANALYSIS.md](.agents/ANALYSIS.md) for detailed comparison.
+**Why this works:**
+- `.github/` = your actual files
+- `.claude/` = pointers to `.github/`
+- Edit once, both tools see it
+- No duplication, no sync issues
+
+See [.agents/ANALYSIS.md](/.agents/ANALYSIS.md) for detailed comparison.
 
 ## Resources
 
