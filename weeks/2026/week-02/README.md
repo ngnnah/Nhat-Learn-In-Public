@@ -4,6 +4,10 @@
 
 - 📝 [The Game of Go & Greatest Players](go-game-and-legends.md) — Quick primer on Go after watching "The Match" on Netflix
 
+## 💰 Finance & Money
+
+- 📝 [Roth vs Traditional 401(k): A Young Professional's Guide](roth-vs-traditional-401k.md) — Math-driven analysis of Roth vs Traditional with scenarios at 5%, 8%, and 11% returns; why Roth wins for young professionals
+
 ## ✈️ Travel & Culture
 
 - 📝 [Sheriff vs Police in the US](sheriff-vs-police.md) — How US law enforcement jurisdictions work
