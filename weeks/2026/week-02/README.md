@@ -3,6 +3,7 @@
 ## 💻 AI, Data & Programming
 
 - 📝 [The Game of Go & Greatest Players](go-game-and-legends.md) — Quick primer on Go after watching "The Match" on Netflix
+- 📝 [VSCode Copilot Customization Primer: AGENTS.md & Agent Skills](vscode-copilot-customization-primer.md) — Comprehensive guide to supercharging GitHub Copilot with custom instructions and Agent Skills; covers memory hierarchy, progressive disclosure, LSP, MCP, and real-world workflows
 
 ## 💰 Finance & Money
 
