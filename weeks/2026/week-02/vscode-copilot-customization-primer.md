@@ -12,11 +12,11 @@ AI assistants forget your conventions, security rules, and workflows between cha
 
 ## Configuration Hierarchy
 
-| LEVEL | LOCATION | APPLIES TO |
-|-------|----------|-----------|
-| Global | `~/.claude/CLAUDE.md` or `~/Library/Application Support/Code/User/copilot-instructions.md` | All your projects |
-| Project | `.github/copilot-instructions.md` | This project |
-| Skills | `.github/skills/*/SKILL.md` | Specific tasks |
+| LEVEL   | LOCATION                                                                                   | APPLIES TO        |
+| ------- | ------------------------------------------------------------------------------------------ | ----------------- |
+| Global  | `~/.claude/CLAUDE.md` or `~/Library/Application Support/Code/User/copilot-instructions.md` | All your projects |
+| Project | `.github/copilot-instructions.md`                                                          | This project      |
+| Skills  | `.github/skills/*/SKILL.md`                                                                | Specific tasks    |
 
 Higher levels inherit to lower levels.
 
@@ -85,12 +85,12 @@ Unlike custom instructions that are always loaded, skills use **progressive disc
 
 ### Agent Skills vs Custom Instructions
 
-|  | SKILLS | INSTRUCTIONS |
-|--|--------|--------------|
-| **Content** | Instructions + scripts + examples | Instructions only |
-| **Loading** | On-demand | Always |
+|             | SKILLS                                         | INSTRUCTIONS                                     |
+| ----------- | ---------------------------------------------- | ------------------------------------------------ |
+| **Content** | Instructions + scripts + examples              | Instructions only                                |
+| **Loading** | On-demand                                      | Always                                           |
 | **Use For** | Testing, debugging, migrations (<20% of chats) | Standards, conventions, security (>80% of chats) |
-| **Tokens** | Only when used | Always in context |
+| **Tokens**  | Only when used                                 | Always in context                                |
 
 ## Creating Skills
 
@@ -251,12 +251,12 @@ MCP connects Claude to external services. **Use wisely**—consumes tokens.
 7. **You Ask**: "Add tests for this component"  
 8. **AI Activates*
 
-| WHAT | WHERE | LOADS |
-|------|-------|-------|
-| Global instructions | `~/Library/.../copilot-instructions.md` | Always |
-| Project instructions | `.github/copilot-instructions.md` | Always |
-| Project skills | `.github/skills/*/SKILL.md` | On-demand |
-| Personal skills | `~/.copilot/skills/*/SKILL.md` | On-demand |
+| WHAT                 | WHERE                                   | LOADS     |
+| -------------------- | --------------------------------------- | --------- |
+| Global instructions  | `~/Library/.../copilot-instructions.md` | Always    |
+| Project instructions | `.github/copilot-instructions.md`       | Always    |
+| Project skills       | `.github/skills/*/SKILL.md`             | On-demand |
+| Personal skills      | `~/.copilot/skills/*/SKILL.md`          | On-demand |
 
 ## Common Mistakes
 
