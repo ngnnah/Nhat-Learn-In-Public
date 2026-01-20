@@ -19,10 +19,10 @@ Maxing out your 401(k) is great. But **Roth or Traditional?** This choice can me
 Max contribution: $23,500/year from age 30 to 65.
 
 | Return Rate | Balance at 65 | Roth (After-Tax) | Traditional (After-Tax at 22%)** |
-|-------------|---------------|------------------|--------------------------------|
-| **5%** | $2.23M | **$2.23M** | $1.74M |
-| **8%** | $4.37M | **$4.37M** | $3.41M |
-| **11%** | $9.65M | **$9.65M** | $7.53M |
+| ----------- | ------------- | ---------------- | -------------------------------- |
+| **5%**      | $2.23M        | **$2.23M**       | $1.74M                           |
+| **8%**      | $4.37M        | **$4.37M**       | $3.41M                           |
+| **11%**     | $9.65M        | **$9.65M**       | $7.53M                           |
 
 **Roth advantage: $490k to $2.1M depending on returns and retirement tax bracket**
 
