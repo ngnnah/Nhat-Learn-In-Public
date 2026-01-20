@@ -4,6 +4,7 @@
 
 - 📝 [The Game of Go & Greatest Players](go-game-and-legends.md) — Quick primer on Go after watching "The Match" on Netflix
 - 📝 [VSCode Copilot Customization Primer: AGENTS.md & Agent Skills](vscode-copilot-customization-primer.md) — Comprehensive guide to supercharging GitHub Copilot with custom instructions and Agent Skills; covers memory hierarchy, progressive disclosure, LSP, MCP, and real-world workflows
+- 📝 [AI Use Case Discovery Framework](ai-use-case-discovery-framework.md) — Systematic 5-step process to identify, evaluate, and prioritize AI use cases for both internal operations and customer-facing initiatives
 
 ## 💰 Finance & Money
 

@@ -5,6 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "pdfplumber>=0.11.9",
+    "pypdf2>=3.0.1",
     "skills-ref>=0.1.1",
 ]
 
