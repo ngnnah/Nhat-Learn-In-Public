@@ -33,7 +33,18 @@ Created by **Honinbo Dosaku** in 17th-century Japan (he's in the GOAT list below
 - 1 dan = "black belt" equivalent — you've mastered the fundamentals
 - 1 rank difference ≈ 1 handicap stone in even games
 - Pro ranks are separate: a 1p is ~7d amateur strength, but 1p→9p span is only 2-3 stones
-- Top players today use Elo ratings (e.g., Shin Jinseo at 3856) for precise comparison
+
+### Rank ↔ Elo Comparison
+
+| Rank | Elo | | Rank | Elo |
+|------|-----|---|------|-----|
+| 20k | ~100 | | 1d | ~2100 |
+| 10k | ~1000 | | 3d | ~2300 |
+| 5k | ~1500 | | 5d | ~2500 |
+| 1k | ~2000 | | 7d / 1p | ~2700 |
+| | | | 9p (top) | ~2940+ |
+
+*Modern top players exceed these — Shin Jinseo's 3856 is off the traditional scale*
 
 ---
 
