@@ -94,11 +94,20 @@ Unlike custom instructions that are always loaded, skills use **progressive disc
 
 ## Creating Skills
 
-**Locations**:
-- Project: `.github/skills/` (preferred) or `.claude/skills/` (legacy)
-- **Personal skills**: `~/.copilot/skills/` (recommended) or `~/.claude/skills/` (legacy)
+**Standard Locations** (both tools recognize):
+- **VSCode Primary**: `.github/skills/` ✅ (recommended)
+- **Claude Primary**: `.claude/skills/` ✅ (legacy but works)
+- **Personal**: `~/.copilot/skills/` or `~/.claude/skills/`
+- **NOT Standard**: `.agents/skills/` ❌ (neither tool recognizes)
 
-### Anatomy of a SKILL.md File
+**Best Practice for Both Tools**:
+```bash
+# Use .github/ with symlinks for compatibility
+.github/skills/          # Primary location
+.claude/skills -> ../.github/skills  # Symlink for Claude
+```
+
+### Anatomy of SKILL.md
 
 ```markdown
 ---
@@ -251,47 +260,87 @@ MCP connects Claude to external services. **Use wisely**—consumes tokens.
 7. **You Ask**: "Add tests for this component"  
 8. **AI Activates*
 
-| WHAT                 | WHERE                                   | LOADS     |
-| -------------------- | --------------------------------------- | --------- |
-| Global instructions  | `~/Library/.../copilot-instructions.md` | Always    |
-| Project instructions | `.github/copilot-instructions.md`       | Always    |
-| Project skills       | `.github/skills/*/SKILL.md`             | On-demand |
-| Personal skills      | `~/.copilot/skills/*/SKILL.md`          | On-demand |
+## Quick Reference
+
+| WHAT | WHERE | LOADS |
+|------|-------|-------|
+| Global instructions | `~/Library/.../copilot-instructions.md` | Always |
+| Project instructions | `.github/copilot-instructions.md` | Always |
+| Project skills | `.github/skills/*/SKILL.md` | On-demand |
+| Personal skills | `~/.copilot/skills/*/SKILL.md` | On-demand |
 
 ## Common Mistakes
 
-1. **Context rot**: Long chats lose focus. Use `/clear`, start fresh chats.
-2. **Vague instructions**: "Write good code" → "Use type hints, PEP 8, explicit errors"
-3. **Too many always-on rules**: <20% usage? Make it a skill.
-4. **Unclear skill descriptions**: Mention both capability AND use case.
-5. **No examples**: Always include working code samplesTL;DR
+1. **Using `.agents/` location**: Neither tool recognizes it ❌
+2. **Context rot**: Long chats lose focus. Use `/clear`, start fresh chats
+3. **Vague instructions**: "Write good code" → "Use type hints, PEP 8, explicit errors"
+4. **Too many always-on rules**: <20% usage? Make it a skill
+5. **Unclear skill descriptions**: Mention both capability AND use case
+6. **No examples**: Always include working code samples
+
+## TL;DR
 
 - **Instructions**: Always-on standards (security, conventions)
 - **Skills**: On-demand workflows (testing, migrations)
+- **Locations**: Use `.github/` (VSCode) with `.claude/` symlinks (compatibility)
+- **NOT `.agents/`**: Neither tool recognizes this location ❌
 - **One task, one chat**: 39% perf hit when mixing topics
-- **<20% rule**: Infrequent? Make it a skill.
+- **<20% rule**: Infrequent? Make it a skill
 - **LSP**: 900x faster semantic navigation
-- **MCP**: One-off? CLI. Repeated? MCP.
+- **MCP**: One-off? CLI. Repeated? MCP
 
-## Migrate `.agents` and `.claude` → `.github`
+## Tool Compatibility Matrix
 
-Current best practice: consolidate to `.github/skills/`
+| Location | VSCode Copilot | Claude Code | Recommended |
+|----------|----------------|-------------|-------------|
+| `.github/skills/` | ✅ Native | ⚠️ Via symlink | **Best** |
+| `.claude/skills/` | ⚠️ Legacy | ✅ Native | OK |
+| `.agents/skills/` | ❌ Not recognized | ❌ Not recognized | **Avoid** |
+| `~/.copilot/skills/` | ✅ Personal | ❌ | Personal only |
+| `~/.claude/skills/` | ❌ | ✅ Personal | Personal only |
+
+## Unified Setup for Both Tools
 
 ```bash
-# Migrate your setup
-mkdir -p .github/skills
+# Standard structure that works with BOTH
+.github/
+  ├── copilot-instructions.md    # Project instructions
+  └── skills/                     # Skills folder
+      ├── testing/
+      └── debugging/
 
-# Move from .agents
-mv .agents/skills/* .github/skills/
-
-# Move from .claude
-mv .claude/skills/* .github/skills/
-
-# Update any internal paths in SKILL.md files
-# Keep .claude/CLAUDE.md for global instructions
+# Add Claude compatibility (optional but recommended)
+.claude/
+  ├── CLAUDE.md -> ../.github/copilot-instructions.md  # Symlink
+  └── skills -> ../.github/skills                      # Symlink
 ```
 
-**Why?** `.github/` is the VSCode Copilot standard and works across all tools. `.claude/` is legacy but still works.
+This way:
+- VSCode Copilot reads `.github/` natively ✅
+- Claude Code reads `.claude/` which points to `.github/` ✅  
+- Both tools see the same content ✅
+- Standard compliant ✅
+
+## Fix Your .agents/ Setup
+
+If you're currently using `.agents/`, migrate to standard locations:
+
+```bash
+# Option 1: Move to .github/ (recommended)
+mkdir -p .github
+mv .agents/skills .github/skills
+mv AGENTS.md .github/copilot-instructions.md
+
+# Add Claude compatibility
+mkdir -p .claude
+ln -s ../.github/copilot-instructions.md .claude/CLAUDE.md
+ln -s ../.github/skills .claude/skills
+
+# Cleanup
+rm -rf .agents
+```
+
+See [.agents/ANALYSIS.md](.agents/ANALYSIS.md) for detailed comparison.
 
 ## Resources
 
