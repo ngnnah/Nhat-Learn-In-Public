@@ -1,5 +1,7 @@
 # AI Use Case Discovery Framework
 
+**Source:** [AI Use Case Discovery Whitepaper (PDF)](https://45321510.fs1.hubspotusercontent-na1.net/hubfs/45321510/Gated%20Content/AI%20Use%20Case%20Discovery%20Whitepaper_102325.pdf?__hstc=118907862.3697e07de3bcafcb2030905cc97eb0e9.1768898470941.1768898470941.1769013285822.2&__hssc=118907862.1.1769013285822&__hsfp=34a7baa8c3ab64c95a95a0d2dd79e4a0) | [Local Copy](AI%20Use%20Case%20Discovery%20Whitepaper_102325.pdf)
+
 ## 🎯 Goal
 Master a systematic 5-step framework to identify, evaluate, and prioritize AI use cases that deliver measurable business value for both internal operations and customer-facing initiatives.
 
