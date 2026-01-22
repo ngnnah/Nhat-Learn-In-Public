@@ -52,6 +52,8 @@ Starting a coding session with seasonal awareness shifts perspective. It's a sma
 └── logs/                 # Auto-generated journal
 ```
 
+**Reference:** [sekki-explanations.md](https://github.com/ngnnah/ready-nhat-ai/blob/main/.claude/skills/seasons/sekki-explanations.md) — Detailed ELI5 explanations for each of the 24 solar terms
+
 **Key Features:**
 - Self-contained Claude Code skill — no external APIs
 - 72 kō reference table with dates, kanji, romaji, translations
