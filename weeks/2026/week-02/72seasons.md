@@ -14,22 +14,7 @@ Running `/seasons` outputs:
 - **Curated quote matching the seasonal theme**
 - Resources for deeper exploration
 
-## Example (today, Jan 22)
-
-```
-┌─────────────────────────────────────────────────┐
-│  第70候 · Fuki no hana saku                     │
-│  "Butterburs bud"                               │
-│                                                 │
-│  January 20-24 · 大寒 Daikan (Major Cold)       │
-└─────────────────────────────────────────────────┘
-
-**Why now?** While air is coldest, soil stays warmer underground.
-The butterbur taps this hidden warmth, blooming before competitors wake.
-
-💬 Quote: "In the depth of winter, I finally learned that within
-me there lay an invincible summer." — Albert Camus
-```
+**Example:** [Log from Jan 23, 2026](https://github.com/ngnnah/I-And-AI/blob/main/.claude/skills/seasons/logs/2026-01-23.md)
 
 ## Why build this?
 
@@ -52,9 +37,9 @@ Starting a coding session with seasonal awareness shifts perspective. It's a sma
 └── logs/                 # Auto-generated journal
 ```
 
-**Reference:** [sekki-explanations.md](https://github.com/ngnnah/ready-nhat-ai/blob/main/.claude/skills/seasons/sekki-explanations.md) — Detailed ELI5 explanations for each of the 24 solar terms
+**Reference:** [sekki-explanations.md](https://github.com/ngnnah/I-And-AI/blob/main/.claude/skills/seasons/sekki-explanations.md) — Detailed ELI5 explanations for each of the 24 solar terms
 
-**Reference:** [resources.md](https://github.com/ngnnah/ready-nhat-ai/blob/main/.claude/skills/seasons/resources.md) — Reference for the 72 micro-seasons with English translations, images, and curated links
+**Reference:** [resources.md](https://github.com/ngnnah/I-And-AI/blob/main/.claude/skills/seasons/resources.md) — Reference for the 72 micro-seasons with English translations, images, and curated links
 
 **Key Features:**
 - Self-contained Claude Code skill — no external APIs
@@ -65,7 +50,7 @@ Starting a coding session with seasonal awareness shifts perspective. It's a sma
 - Local images supported (no broken external links)
 - Contemplation themes that shift throughout the year
 
-**Source:** [github.com/ngnnah/ready-nhat-ai/.claude/skills/seasons](https://github.com/ngnnah/ready-nhat-ai/tree/main/.claude/skills/seasons)
+**Source:** [github.com/ngnnah/I-And-AI/.claude/skills/seasons](https://github.com/ngnnah/I-And-AI/tree/main/.claude/skills/seasons)
 
 ---
 
