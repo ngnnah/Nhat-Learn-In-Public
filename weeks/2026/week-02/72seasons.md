@@ -29,10 +29,9 @@ Starting a coding session with seasonal awareness shifts perspective. It's a sma
 **Core Implementation:**
 ```
 .claude/skills/seasons/
-├── SKILL.md              # Instructions + 72 kō reference table
+├── SKILL.md              # Instructions + 72 kō reference table + quotes
 ├── sekki-explanations.md # ELI5 for each solar term
 ├── resources.md          # Curated links per season
-├── quotes.md             # 40+ quotes organized by season
 ├── images/               # Local images (git-tracked)
 └── logs/                 # Auto-generated journal
 ```
