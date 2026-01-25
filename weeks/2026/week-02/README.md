@@ -24,7 +24,7 @@
 
 ## 📊 Week Summary
 
-**Key Wins**: Built 2 educational math games for nephews (Pokemon Math World, Iron Academy). Started MITx 6.431x probability course. Created Claude Code seasonal awareness skill.
+**Key Wins**: Built 2 educational math games for nephews (Pokemon Math World, Iron Academy) with localStorage state persistance (saving checkpoints) and deployed to Github Pages. Started MITx 6.431x probability course. Created Claude Code seasonal awareness skill.
 
 **Challenges**: Balancing course study with side projects. 
 
