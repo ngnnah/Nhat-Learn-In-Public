@@ -8,6 +8,7 @@
 - 📝 [Built a Claude Code Skill for Seasonal Awareness](72seasons.md) — Custom `/seasons` skill that displays Japanese 72 micro-seasons with quotes, images, ELI5 explanations, and daily practices
 - 🎮 [Pokemon Math](https://github.com/ngnnah/I-And-AI/blob/main/projects/pokemon-math/README.md) — Fun math game for 1st graders; simple addition (0-10), 15 Pokemon to catch, mobile-friendly single HTML file
 - 🎮 [Pokemon Math Adventure](https://github.com/ngnnah/I-And-AI/blob/main/projects/pokemon-math-advanced/README.md) — Advanced version with 9 chapters, 3 gym battles, addition/subtraction/missing numbers, 25+ Pokemon, team building mechanics
+- 📚 [MITx 6.431x: Probability Models, Axioms, and Infinite Sets](probability-models-axioms.md) — Week 1 Unit 1 notes; sample spaces, the 3 axioms, countable vs uncountable sets, geometric series, and the 0=1 paradox
 
 ## 💰 Finance & Money
 
