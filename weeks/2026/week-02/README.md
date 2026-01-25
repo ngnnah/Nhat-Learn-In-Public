@@ -8,6 +8,7 @@
 - 📝 [Built a Claude Code Skill for Seasonal Awareness](72seasons.md) — Custom `/seasons` skill that displays Japanese 72 micro-seasons with quotes, images, ELI5 explanations, and daily practices
 - 🎮 [Pokemon Math World](https://github.com/ngnnah/I-And-AI/tree/main/projects/pokemon-math-world) — Progressive math game with 3 difficulty tiers (Trainer School → Pokemon League → Champion's Road), 40+ Pokemon, gym battles, and elite four challenges
 - 🎮 [Iron Academy: The Workshop Awakening](https://github.com/ngnnah/I-And-AI/tree/main/projects/iron-academy) — Tony Stark-themed math game for 5th-6th graders; fractions, decimals, percentages, order of operations, plus SAT vocab builder
+- 🛠️ [GitHub Todo App](https://github.com/ngnnah/I-And-AI/tree/main/projects/github-todo-app) — Client-side task manager using GitHub as backend; runs entirely in browser with OAuth auth, stores tasks in a private repo
 - 📚 [MITx 6.431x: Probability Models, Axioms, and Infinite Sets](probability-models-axioms.md) — Week 1 Unit 1 notes; sample spaces, the 3 axioms, countable vs uncountable sets, geometric series, and the 0=1 paradox
 
 ## 💰 Finance & Money
@@ -24,7 +25,7 @@
 
 ## 📊 Week Summary
 
-**Key Wins**: Built 2 educational math games for nephews (Pokemon Math World, Iron Academy) with localStorage state persistance (saving checkpoints) and deployed to Github Pages. Started MITx 6.431x probability course. Created Claude Code seasonal awareness skill.
+**Key Wins**: Built 3 apps deployed to GitHub Pages: 2 educational math games for nephews (Pokemon Math World, Iron Academy) with localStorage state persistence, plus a GitHub-backed Todo App. Started MITx 6.431x probability course. Created Claude Code seasonal awareness skill.
 
 **Challenges**: Balancing course study with side projects. 
 
