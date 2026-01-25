@@ -12,7 +12,7 @@
 
 | Week    | Date Range      | Summary                                   | Link                                   |
 | ------- | --------------- | ----------------------------------------- | -------------------------------------- |
-| Week 02 | Jan 19 - Jan 25 | TBD                                       | [View →](weeks/2026/week-02/README.md) |
+| Week 02 | Jan 19 - Jan 25 | Built 2 math games for nephews; started MITx 6.431x | [View →](weeks/2026/week-02/README.md) |
 | Week 01 | Jan 12 - Jan 18 | Getting started with the learning journal | [View →](weeks/2026/week-01/README.md) |
 
 ---
