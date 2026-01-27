@@ -38,6 +38,21 @@ Each week covers up to 6 life domains:
 
 ---
 
+## 🤖 AI Assistant Setup
+
+Symlinks share instructions between Claude Code and GitHub Copilot:
+
+| Symlink | Target | Purpose |
+|---------|--------|---------|
+| `.claude/CLAUDE.md` | `.github/copilot-instructions.md` | Single source of truth for AI instructions |
+| `.claude/skills` | `.github/skills` | Shared modular skills |
+
+**Scripts:**
+- `scripts/new-week.sh` — Creates new week folder with sequential numbering
+- `scripts/check-urls.sh` — Validates all markdown links
+
+---
+
 <div align="center">
 
 *Keep learning, keep growing, keep sharing.* 🚀
