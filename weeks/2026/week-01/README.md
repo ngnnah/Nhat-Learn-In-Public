@@ -17,7 +17,7 @@
 ## ✈️ Travel & Culture
 - Start to document all places I have visited (trips taken, favorite local spots), and tips and lessons learned
 - 🍞 [Cascade Bakery](cascade-bakery.md) — New favorite local spot near home in Osaka. Best bread I've ever had (Hokkaido wheat, Shuzake yeast, wholesome grains) 
-- Started reading [Microadventures](https://alastairhumphreys.com/product/microadventures/) by Alastair Humphreys
+- 📝 [Microadventures: Local Discoveries for Great Escapes](book-microadventures.md) by Alastair Humphreys
 
 ## 🌱 Personal Development
 - The power of public accountability in achieving goals
