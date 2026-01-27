@@ -62,6 +62,22 @@ Enable AI agents to maintain and extend a weekly learning journal with minimal f
 - `weeks/` — all content, organized by year/week
 - `.github/skills/` — agent skills (see each `SKILL.md`)
 
+## Session Workflow
+
+Maintain `PROGRESS.md` to preserve context across sessions:
+
+- **Start**: Read today's and yesterday's entries for relevant context (use `progress-context` skill)
+- **During**: Update `PROGRESS.md` after completing key tasks
+- **End**: Ensure all changes are logged with appropriate topic headers
+
+**What to log:**
+- Completed changes (files modified, features added)
+- Blockers encountered and how they were resolved
+- Failed approaches (what didn't work and why)
+- Decisions made and reasoning
+
+**Topic headers:** `### Scripts`, `### Content`, `### Conventions`, `### Docs`, `### Fixes`, `### Blockers`
+
 ## Project-Specific Patterns
 
 - **Never** put detailed content in weekly README files—use post files.
