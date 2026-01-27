@@ -18,6 +18,10 @@ Often called the sequel to Kahneman's *Thinking, Fast and Slow*.
 
 - TBD
 
+## Related Reading
+
+- 📝 [Ten Commandments for Superforecasters](ten-commandments-superforecasters.md) — Farnam Street summary of Tetlock's key principles
+
 ## Personal Reflections
 
 - TBD

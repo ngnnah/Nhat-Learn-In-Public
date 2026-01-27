@@ -5,7 +5,8 @@
 ---
 
 ## 🌱 Personal Development
-- 📝 [Superforecasting: The Art and Science of Prediction](book-superforecasting.md)
+- 📚 Start reading [Superforecasting: The Art and Science of Prediction](book-superforecasting.md)
+- 📝 [Ten Commandments for Superforecasters](ten-commandments-superforecasters.md)
 
 ---
 
