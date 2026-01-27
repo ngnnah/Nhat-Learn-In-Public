@@ -1,35 +1,17 @@
 # Week XX, YYYY (Month DD - Month DD)
 
-> **Week at a Glance**: [Brief 1-2 sentence summary]
+> **Week at a Glance**: TBD
 
 ---
 
+<!-- Add topic sections as needed:
 ## 💻 AI, Data & Programming
-- [Bullet points for quick learnings]
-- 📝 [Detailed Post Title](filename.md) ← link to subpages like this
-
 ## 💰 Finance & Money
-- 
-
 ## ✈️ Travel & Culture
-- 
-
 ## 🌱 Personal Development
-- 
-
 ## 💪 Health & Fitness
-- 
-
 ## ❤️ Relationships, Life & Family
-- 
-
----
-
-## 📊 Week Summary
-
-**Key Wins**: 
-
-**Challenges**: 
+-->
 
 ---
 
