@@ -15,6 +15,8 @@
 - Created `book-microadventures.md` in week-01
 - Renamed `superforecasting.md` → `book-superforecasting.md`
 - Updated "Why This Book?" sections to be concise and catchy
+- Created `ten-commandments-superforecasters.md` in week-03 (Farnam Street article summary)
+- Added "Related Reading" section to `book-superforecasting.md` linking to the commandments post
 
 ### Conventions
 - Added `book-` prefix for book review posts
