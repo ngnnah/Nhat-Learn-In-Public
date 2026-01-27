@@ -12,6 +12,7 @@
 
 | Week    | Date Range      | Summary                                   | Link                                   |
 | ------- | --------------- | ----------------------------------------- | -------------------------------------- |
+| Week 03 | Jan 26 - Feb 01 | TBD                                       | [View →](weeks/2026/week-03/README.md) |
 | Week 02 | Jan 19 - Jan 25 | Built 3 apps (2 math games + GitHub Todo); started MITx 6.431x | [View →](weeks/2026/week-02/README.md) |
 | Week 01 | Jan 12 - Jan 18 | Getting started with the learning journal | [View →](weeks/2026/week-01/README.md) |
 
@@ -32,7 +33,7 @@ Each week covers up to 6 life domains:
 
 ## 📈 Progress
 
-- **Weeks Documented**: 2
+- **Weeks Documented**: 3
 - **Started**: January 2026
 
 ---
