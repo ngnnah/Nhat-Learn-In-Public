@@ -7,7 +7,7 @@ Enable AI agents to maintain and extend a weekly learning journal with minimal f
 ## Project Architecture & Key Workflows
 
 - **Main README.md**: Central navigation table. Always update the weekly table and "Weeks Documented" count when adding a new week.
-- **scripts/new-week.sh**: Automates new week setup. Use this script to create `weeks/YYYY/week-XX/` folders and prefill from `TEMPLATE.md`.
+- **scripts/new-week.sh**: Automates new week setup. Creates `weeks/YYYY/week-XX/` folders and prefills from `TEMPLATE.md`. Uses **sequential week numbering** (week-01, week-02, week-03...) based on existing folders, not ISO week numbers.
 - **scripts/check-urls.sh**: Validates all markdown links (internal/external). Run after adding or editing content. Logs to `logs/url-checks/` and updates `UNRESOLVED.md`.
 - **weeks/YYYY/week-XX/README.md**: Navigation hub for the week. Only include bullet summaries and links to detailed posts. Never add full content here.
 - **weeks/YYYY/week-XX/post-name.md**: Detailed learning posts. Use kebab-case filenames. Always include `[← Back to Week XX](README.md)` at the bottom.
@@ -33,7 +33,10 @@ Enable AI agents to maintain and extend a weekly learning journal with minimal f
         `[← Previous Week](../week-XX/README.md) | [Main README](../../../README.md) | [Next Week →](../week-XX/README.md)`
 
 - **Posts**: ELI5 explanations, tables, comparisons. Always end with a back-link to the week hub: `[← Back to Week XX](README.md)`
-- **Filenames**: Use kebab-case for posts. Never overwrite or remove existing links/content.
+- **Filenames**: Use kebab-case for posts. Use prefixes for content types:
+    - `book-` for book reviews/notes (e.g., `book-superforecasting.md`)
+    - Never overwrite or remove existing links/content.
+- **Book posts**: Include a "Why This Book?" section that is concise and catchy (2-3 punchy sentences max). Make readers want to pick up the book.
 - **Empty sections**: Omit or skip in weekly files—do not add placeholders.
 
 ## Automation & Validation

@@ -15,7 +15,7 @@
 - 
 
 ## 🌱 Personal Development
-- 📝 [Superforecasting: The Art and Science of Prediction](superforecasting.md)
+- 📝 [Superforecasting: The Art and Science of Prediction](book-superforecasting.md)
 
 ## 💪 Health & Fitness
 - 
