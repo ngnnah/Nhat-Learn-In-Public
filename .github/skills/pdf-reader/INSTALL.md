@@ -60,8 +60,8 @@ with pdfplumber.open(pdf_path) as pdf:
 The skill includes a ready-to-use command-line script:
 
 ```bash
-# Navigate to the scripts directory
-cd /Users/nhat/repo-fun/Nhat-Learn-In-Public/.claude/skills/pdf-reader/scripts
+# Navigate to the scripts directory (from project root)
+cd .github/skills/pdf-reader/scripts
 
 # Make it executable (optional)
 chmod +x pdf_reader.py
