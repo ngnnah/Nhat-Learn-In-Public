@@ -7,13 +7,9 @@
 ## 2026-02-07
 
 ### Content
-- Created week-04 using `new-week.sh`
-- Added `monty-hall-problem.md` — intuition for why switching wins using 1000-door scenario
-- Linked to existing MITx 6.431x probability course from week-02
-- Added `nanja-monja-card-game.md` — accessible memory card game for social connection
-- Reviewed and streamlined Nanja Monja entry with 2-sentence rule intro at top
-- Added card setup section: original game specs (60 cards, 12 creatures, 5 each) + DIY flexibility (52-card, Uno, any deck/count/distribution)
-- Added origin story (Russia → Japan 2016) and name meaning ("What the heck?" / "WTF?!")
+- Created week-04
+- Added `monty-hall-problem.md` (MITx 6.431x probability intuition)
+- Added `nanja-monja-card-game.md` (emphasized naming creativity, phrases work great, added 2+/3+ word house rule)
 
 ---
 
