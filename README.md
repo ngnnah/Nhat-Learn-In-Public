@@ -12,7 +12,8 @@
 
 | Week    | Date Range      | Summary                                                        | Link                                   |
 | ------- | --------------- | -------------------------------------------------------------- | -------------------------------------- |
-| Week 03 | Jan 26 - Feb 01 | TBD                                                            | [View →](weeks/2026/week-03/README.md) |
+| Week 04 | Feb 02 - Feb 08 | TBD                                                            | [View →](weeks/2026/week-04/README.md) |
+| Week 03 | Jan 26 - Feb 01 | Forecasting principles & calisthenics fitness                  | [View →](weeks/2026/week-03/README.md) |
 | Week 02 | Jan 19 - Jan 25 | Built 3 apps (2 math games + GitHub Todo); started MITx 6.431x | [View →](weeks/2026/week-02/README.md) |
 | Week 01 | Jan 12 - Jan 18 | Getting started with the learning journal                      | [View →](weeks/2026/week-01/README.md) |
 
@@ -33,7 +34,7 @@ Each week covers up to 6 life domains:
 
 ## 📈 Progress
 
-- **Weeks Documented**: 3
+- **Weeks Documented**: 4
 - **Started**: January 2026
 
 ---
@@ -42,10 +43,10 @@ Each week covers up to 6 life domains:
 
 Symlinks share instructions between Claude Code and GitHub Copilot:
 
-| Symlink | Target | Purpose |
-|---------|--------|---------|
+| Symlink             | Target                            | Purpose                                    |
+| ------------------- | --------------------------------- | ------------------------------------------ |
 | `.claude/CLAUDE.md` | `.github/copilot-instructions.md` | Single source of truth for AI instructions |
-| `.claude/skills` | `.github/skills` | Shared modular skills |
+| `.claude/skills`    | `.github/skills`                  | Shared modular skills                      |
 
 **Scripts:**
 - `scripts/new-week.sh` — Creates new week folder with sequential numbering
