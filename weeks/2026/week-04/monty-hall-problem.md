@@ -45,10 +45,10 @@ After the host opens 998 doors, many people think the two remaining doors each h
 
 ### Final Probabilities with 1000 Doors
 
-| Strategy | Win Probability |
-|----------|----------------|
-| Staying  | 1/1000         |
-| Switching| 999/1000       |
+| Strategy  | Win Probability |
+| --------- | --------------- |
+| Staying   | 1/1000          |
+| Switching | 999/1000        |
 
 ---
 
