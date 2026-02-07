@@ -1,73 +1,74 @@
-# Nanja Monja: The Most Accessible Memory Card Game
+# 🎴 Nanja Monja: The Most Accessible Memory Card Game
 
-## The Game in 2 Sentences
+## TLDR: The Game
 
-Flip cards and invent silly names or phrases for new visuals—when a card reappears, race to shout what you called it. Winner keeps the pile; most cards at the end wins.
-
----
-
-## Why I Love This Game
-
-**60-second rules. 5-minute rounds. Endless replayability.** I've introduced this to countless groups across ages, languages, and cultures—from grandparents to coworkers to language exchange meetups. Every single time: instant laughter and connection.
-
-**Origin:** Created in Russia, popularized in Japan (2016). **"Nanja Monja" (なんじゃもんじゃ)** = Japanese for "What the heck?!" or loosely "WTF?!"—perfectly capturing reactions to the bizarre creatures and silly names.
+Flip cards and invent silly names or phrases for new visuals—when a card reappears, race to shout what you called it. Winner keeps the pile; most cards wins.
 
 ---
 
-## Original Game Specs
+## 💡 Why I Love This Game
 
-- **60 cards:** 12 different creatures, 5 cards each
-- Optimal balance for gameplay
+**60-second rules. 5-minute rounds. Endless replayability.** 
 
-**DIY Flexibility:** Works with any deck—52-card standard, Uno, Pokemon, themed cards. Use 20 cards for quick games or 100+ for chaos. Even/uneven distribution both work. The core mechanic (name it, remember it, shout it) is fun regardless of setup.
+Introduced to grandparents, coworkers, language exchange meetups across ages and cultures. Every single time: instant laughter and connection.
+
+**Origin:** Created in Russia, popularized in Japan (2016). **"Nanja Monja" (なんじゃもんじゃ)** = "What the heck?!" or "WTF?!"—perfectly capturing reactions to bizarre creatures and ridiculous names.
 
 ---
 
-## How to Play
+## 📦 Original Game vs DIY
 
-1. Flip card → First person seeing NEW visual names it (or phrases it!)
-2. Same visual reappears → Race to shout its name/phrase
+**Original:** 60 cards, 12 creatures, 5 each
+
+**DIY flexibility:** Any deck works—52-card, Uno, Pokemon. Use 20 cards for quick games or 100+ for chaos. Even/uneven distribution both work.
+
+---
+
+## 🎮 How to Play
+
+1. Flip card → First person names/phrases it
+2. Same card reappears → Race to shout it
 3. Correct shout → Takes the pile
 4. Most cards wins
 
-**The REAL fun: The naming creativity!** 
-- Names work: "Princess Bananas," "Mr. Fancy Pants"
-- Common or ridiculous phrases work brilliantly: "What goes around comes around," "My butt is losing my mind"
-- Themed naming (optional): animals, foods, celebrities, movie quotes, song lyrics
-- The panic-memory moment when you're desperately trying to recall what you named it 30 seconds ago
+**🎨 The REAL fun: Naming creativity!** 
+- Names: "Princess Bananas," "Captain Sparkles"
+- Common phrases: "Easy peasy lemon squeezy," "Piece of cake," "Not my circus not my monkeys"
+- Movie quotes, song lyrics, inside jokes—anything goes!
+- The panic when you can't remember what YOU just named it 😂
 
 ---
 
-## Why It Works Everywhere
+## ✨ Why It Works
 
-**Universal Appeal:**
-- No language/age/gaming advantage
-- Creates inside jokes instantly
-- Anyone can teach it forward
+**Universal:**
+- No age/language/gaming advantage
+- Inside jokes form instantly
+- Anyone can teach it
 
 **Practical:**
-- Zero prep, ultra-portable
-- Any player count (2 to 20+)
-- Play one round or marathon
+- Zero prep, pocket-sized
+- 2 to 20+ players
+- One round or marathon sessions
 
-**My best moment:** Someone shouting five wrong names while inventing increasingly desperate variations of "what goes around comes around!"
-
----
-
-## Tips & House Rules
-
-1. **Phrases > single words** — "My brain has gone deep south" > "Upside down"
-2. **My favorite house rule:** After a few warm-up rounds, require **2+ or 3+ word minimum** for all names. Forces creativity and makes recall hilariously harder
-3. **Themed decks** (Pokemon, Mario) add visual interest
-4. **Start with 15-20 cards** for beginners
-5. **Embrace chaos** — Simultaneous shouting is the point
+**Best moment:** Someone desperately shouting wrong variations while the table erupts 🤣
 
 ---
 
-## Where to Get It
+## 🎲 Tips & House Rules
 
-- **Official:** Game stores and online
-- **DIY:** Any deck with distinct visuals (standard cards, Uno, themed decks)
+1. **Phrases > words** — "Easy peasy lemon squeezy" > "Green Guy"
+2. **🔥 My favorite rule:** After warm-up rounds, require **2+ or 3+ word minimum**—forces creativity, makes recall hilariously harder
+3. **Themed decks** level up the fun
+4. **Start with 15-20 cards** for newbies
+5. **Embrace the chaos** 📣
+
+---
+
+## 🛒 Where to Get It
+
+- **Official:** Game stores, online
+- **DIY:** Any deck with visuals (standard cards, Uno, themed decks)
 
 ---
 
