@@ -1,74 +1,57 @@
-# 🎴 Nanja Monja: The Most Accessible Memory Card Game
+# Nanja Monja 🎴: An Accessible Memory Card Game
 
-## TLDR: The Game
+## What is it?
 
-Flip cards and invent silly names or phrases for new visuals—when a card reappears, race to shout what you called it. Winner keeps the pile; most cards wins.
+A memory card game where you flip cards and make up names for them. When the same card appears again, everyone races to shout its name. Get it right, you keep the pile. Most cards wins.
 
----
-
-## 💡 Why I Love This Game
-
-**60-second rules. 5-minute rounds. Endless replayability.** 
-
-Introduced to grandparents, coworkers, language exchange meetups across ages and cultures. Every single time: instant laughter and connection.
-
-**Origin:** Created in Russia, popularized in Japan (2016). **"Nanja Monja" (なんじゃもんじゃ)** = "What the heck?!" or "WTF?!"—perfectly capturing reactions to bizarre creatures and ridiculous names.
+That's literally the entire rule set. Takes under a minute to explain.
 
 ---
 
-## 📦 Original Game vs DIY
+## Why I keep teaching this to people
 
-**Original:** 60 cards, 12 creatures, 5 each
+I've introduced this to kids, coworkers, friends from different countries. It works every time because:
 
-**DIY flexibility:** Any deck works—52-card, Uno, Pokemon. Use 20 cards for quick games or 100+ for chaos. Even/uneven distribution both work.
+- No advantage from age, language, or gaming experience
+- Games are quick (5 minutes) but you end up playing for hours
+- Creates inside jokes immediately
 
----
-
-## 🎮 How to Play
-
-1. Flip card → First person names/phrases it
-2. Same card reappears → Race to shout it
-3. Correct shout → Takes the pile
-4. Most cards wins
-
-**🎨 The REAL fun: Naming creativity!** 
-- Names: "Princess Bananas," "Captain Sparkles"
-- Common phrases: "Easy peasy lemon squeezy," "Piece of cake," "Not my circus not my monkeys"
-- Movie quotes, song lyrics, inside jokes—anything goes!
-- The panic when you can't remember what YOU just named it 😂
+**Fun fact:** Originally Russian, became popular in Japan in 2016. "Nanja Monja" (なんじゃもんじゃ) means "what the heck?" in Japanese.
 
 ---
 
-## ✨ Why It Works
+## The best part: naming
 
-**Universal:**
-- No age/language/gaming advantage
-- Inside jokes form instantly
-- Anyone can teach it
+You're not limited to names. Phrases work great:
 
-**Practical:**
-- Zero prep, pocket-sized
-- 2 to 20+ players
-- One round or marathon sessions
+- "Princess Bananas" or "Captain Sparkles"  
+- "Easy peasy lemon squeezy"
+- "Not my circus not my monkeys"
+- Movie quotes, song lyrics, whatever
 
-**Best moment:** Someone desperately shouting wrong variations while the table erupts 🤣
+The real fun is watching someone panic when they can't remember what they JUST named a card 30 seconds ago.
 
 ---
 
-## 🎲 Tips & House Rules
+## Setup
 
-1. **Phrases > words** — "Easy peasy lemon squeezy" > "Green Guy"
-2. **🔥 My favorite rule:** After warm-up rounds, require **2+ or 3+ word minimum**—forces creativity, makes recall hilariously harder
-3. **Themed decks** level up the fun
-4. **Start with 15-20 cards** for newbies
-5. **Embrace the chaos** 📣
+**Original game:** 60 cards (12 creatures, 5 cards each)
+
+**DIY:** Use any deck—standard 52-card, Uno, Pokemon. Start with 20 cards for quick games, or use 100+ for chaos.
 
 ---
 
-## 🛒 Where to Get It
+## My favorite house rule
 
-- **Official:** Game stores, online
-- **DIY:** Any deck with visuals (standard cards, Uno, themed decks)
+After a few warm-up rounds, require **3+ word minimum** for all names. 
+
+Single words become illegal. "Bob" must become "Bob's your uncle" or nothing. Forces creativity and makes the memory challenge way harder (and funnier).
+
+---
+
+## Where to get it
+
+Official version at game stores or online. Or just use any cards you have.
 
 ---
 

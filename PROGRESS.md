@@ -9,7 +9,7 @@
 ### Content
 - Created week-04
 - Added `monty-hall-problem.md` (MITx 6.431x probability intuition)
-- Added `nanja-monja-card-game.md` (emphasized naming creativity, phrases work great, added 2+/3+ word house rule)
+- Added `nanja-monja-card-game.md` (natural writing style, concise, human-written feel)
 
 ---
 
