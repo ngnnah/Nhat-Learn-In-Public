@@ -1,4 +1,4 @@
-# Nanja Monja 🎴: An Accessible Memory Card Game
+# 🎴 Nanja Monja: An Accessible Memory Card Game
 
 ## What is it?
 
