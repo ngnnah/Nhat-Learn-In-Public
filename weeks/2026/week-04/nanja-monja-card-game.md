@@ -10,7 +10,7 @@ That's literally the entire rule set. Takes under a minute to explain.
 
 ## Why I keep teaching this to people
 
-I've introduced this to kids, coworkers, friends from different countries. It works every time because:
+I've introduced this to everyone from grandparents to kids, coworkers to friends from different countries. It works every time because:
 
 - No advantage from age, language, or gaming experience
 - Games are quick (5 minutes) but you end up playing for hours
