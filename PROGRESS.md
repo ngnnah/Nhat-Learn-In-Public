@@ -10,6 +10,7 @@
 - Created week-04 using `new-week.sh`
 - Added `monty-hall-problem.md` — intuition for why switching wins using 1000-door scenario
 - Linked to existing MITx 6.431x probability course from week-02
+- Added `nanja-monja-card-game.md` — accessible memory card game for social connection
 
 ---
 
