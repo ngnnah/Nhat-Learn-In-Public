@@ -6,17 +6,17 @@ Think of padel as **pickleball's European cousin that grew up in a glass cage**.
 
 ## The Quick Comparison
 
-| Feature | Padel | Pickleball |
-|---------|-------|-----------|
-| **Court Size** | 66 × 33 ft (bigger) | 44 × 20 ft (smaller) |
-| **Walls** | Yes! Glass/mesh walls you play off | No walls |
-| **Racquet** | Solid paddle (no strings) | Solid paddle (no strings) |
-| **Ball** | Tennis ball (less pressure) | Wiffle ball (plastic with holes) |
-| **Serving** | Underhand, must bounce first | Underhand, below waist |
-| **Scoring** | Like tennis (15-30-40) | Rally scoring to 11 |
-| **Players** | Always doubles (4 players) | Mostly doubles, can be singles |
-| **Strategy** | Wall bounces = more rallies | Net play dominates |
-| **Where Popular** | Spain, Latin America, Europe | USA, Canada |
+| Feature           | Padel                              | Pickleball                       |
+| ----------------- | ---------------------------------- | -------------------------------- |
+| **Court Size**    | 66 × 33 ft (bigger)                | 44 × 20 ft (smaller)             |
+| **Walls**         | Yes! Glass/mesh walls you play off | No walls                         |
+| **Racquet**       | Solid paddle (no strings)          | Solid paddle (no strings)        |
+| **Ball**          | Tennis ball (less pressure)        | Wiffle ball (plastic with holes) |
+| **Serving**       | Underhand, must bounce first       | Underhand, below waist           |
+| **Scoring**       | Like tennis (15-30-40)             | Rally scoring to 11              |
+| **Players**       | Always doubles (4 players)         | Mostly doubles, can be singles   |
+| **Strategy**      | Wall bounces = more rallies        | Net play dominates               |
+| **Where Popular** | Spain, Latin America, Europe       | USA, Canada                      |
 
 ## Key Differences for Pickleball Players
 
