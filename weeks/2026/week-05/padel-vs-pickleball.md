@@ -4,6 +4,8 @@
 
 Think of padel as **pickleball's European cousin that grew up in a glass cage**. It's a racquet sport that looks like tennis had a baby with squash, played on a court surrounded by walls you can bounce the ball off—like racquetball but with a partner.
 
+**Watch**: [Padel vs Pickleball explained](https://www.youtube.com/shorts/EIuzc4yHWJE) (1 min)
+
 ## The Quick Comparison
 
 | Feature           | Padel                              | Pickleball                       |

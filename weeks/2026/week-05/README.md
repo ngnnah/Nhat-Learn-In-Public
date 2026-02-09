@@ -1,6 +1,6 @@
 # Week 05, 2026 (Feb 09 - Feb 15)
 
-> **Week at a Glance**: Exploring racquet sports
+> **Week at a Glance**: TBD
 
 ---
 

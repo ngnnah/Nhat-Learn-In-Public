@@ -6,7 +6,7 @@ Enable AI agents to maintain and extend a weekly learning journal with minimal f
 
 ## Project Architecture & Key Workflows
 
-- **Main README.md**: Central navigation table. Always update the weekly table and "Weeks Documented" count when adding a new week.
+- **Main README.md**: Central navigation table. Always update the weekly table and "Weeks Documented" count when adding a new week. Each week entry should have a brief summary/recap (1 sentence describing the key topics covered).
 - **scripts/new-week.sh**: Automates new week setup. Creates `weeks/YYYY/week-XX/` folders and prefills from `TEMPLATE.md`. Uses **sequential week numbering** (week-01, week-02, week-03...) based on existing folders, not ISO week numbers.
 - **scripts/check-urls.sh**: Validates all markdown links (internal/external). Run after adding or editing content. Logs to `logs/url-checks/` and updates `UNRESOLVED.md`.
 - **weeks/YYYY/week-XX/README.md**: Navigation hub for the week. Only include bullet summaries and links to detailed posts. Never add full content here.
@@ -25,6 +25,7 @@ Enable AI agents to maintain and extend a weekly learning journal with minimal f
     - ❤️ Relationships, Life & Family
 
 - **Weekly README.md**:
+    - **"Week at a Glance"**: Leave as "TBD" when first creating a new week. Only update this field at the END/CLOSING of the week to provide a summary once all content is added.
     - For each post or key point, place it under the correct topic heading (see categories above)
     - Only include topic headings that have content for that week (omit empty sections)
     - Bullet points only, no explanations under headings
@@ -43,8 +44,9 @@ Enable AI agents to maintain and extend a weekly learning journal with minimal f
 
 - **Add a new week**:
     1. Run `./scripts/new-week.sh` (preferred) or copy from `TEMPLATE.md`.
-    2. Update the main README table (newest week at top).
+    2. Update the main README table (newest week at top) with a brief summary/recap.
     3. Increment "Weeks Documented".
+    4. Leave "Week at a Glance" as "TBD" in the weekly README until the week closes.
 - **Check links**: Run `./scripts/check-urls.sh` after content changes. Review `logs/url-checks/UNRESOLVED.md` for broken links.
 - **Skill usage**: Use `.github/skills/` for modular automation (e.g., `checking-urls`, `learning-content-summarizer`). Follow each `SKILL.md` for workflow and best practices.
 

@@ -11,6 +11,13 @@
 - Added `padel-vs-pickleball.md` (concise comparison for pickleball players, ELI5 style with table)
 - Updated main README table with week 5 entry (summary: "Padel vs pickleball comparison")
 
+### Conventions
+- Updated copilot-instructions.md with new rules:
+  - Main README: Each week entry should have a brief summary/recap (1 sentence)
+  - Weekly README "Week at a Glance": Leave as "TBD" when first creating a new week, only update at END/CLOSING of the week
+  - Added step 4 to "Add a new week" workflow: Leave "Week at a Glance" as "TBD" until week closes
+- Corrected week-05/README.md "Week at a Glance" from "Exploring racquet sports" back to "TBD" (follows new rule)
+
 ---
 
 ## 2026-02-07
