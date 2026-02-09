@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-02-09
+
+### Content
+- Created week-05 using `new-week.sh`
+- Added `padel-vs-pickleball.md` (concise comparison for pickleball players, ELI5 style with table)
+- Updated main README table with week 5 entry (summary: "Padel vs pickleball comparison")
+
+---
+
 ## 2026-02-07
 
 ### Content

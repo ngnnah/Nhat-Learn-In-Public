@@ -1,6 +1,6 @@
 # Week 04, 2026 (Feb 02 - Feb 08)
 
-> **Week at a Glance**: TBD
+> **Week at a Glance**: Probability and memory card game Nanja Monja
 
 ---
 
